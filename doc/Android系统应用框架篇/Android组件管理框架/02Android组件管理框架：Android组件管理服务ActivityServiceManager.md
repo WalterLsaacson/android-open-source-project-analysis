@@ -242,8 +242,8 @@ ActivityManager定义了很多静态内部类来描述这些信息，具体说�
 那么这些组件的信息都存储在哪里呢？🤔
 
 - Activity的信息记录在ActivityStack、ActivityStackSupervisor和AM中。
-- Service的信息记录在BroadcastQueue和AMS中。
-- Broadcast的信息记录在ActiveServices和AMS中。
+- Service的信息记录在ActiveServices和AMS中。
+- Broadcast的信息记录在BroadcastQueue和AMS中。
 - Provider的信息记录在ProviderMap和AMS中。
 
 ## 二 应用主线程ActivityThread

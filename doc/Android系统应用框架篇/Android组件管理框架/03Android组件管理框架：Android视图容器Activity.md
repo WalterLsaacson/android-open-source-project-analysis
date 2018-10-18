@@ -95,7 +95,7 @@ Activity的启动流程图（放大可查看）如下所示：
 
 - ActivityInfo	从<activity>标签中解析出来的信息，包含launchMode，permission，taskAffinity等
 - mActivityType	Activity的类型有三种：APPLICATION_ACTIVITY_TYPE(应用)、HOME_ACTIVITY_TYPE(桌面)、RECENTS_ACTIVITY_TYPE(最近使用)
-- appToken	当前ActivityRecord的标识
+- appToken	当前ActivityRecord的标识 // window manager token 提供给windowmangerservice使用
 - packageName	当前所属的包名，这是由<activity>静态定义的
 - processName	当前所属的进程名，大部分情况都是由<activity>静态定义的，但也有例外
 - taskAffinity	相同taskAffinity的Activity会被分配到同一个任务栈中
